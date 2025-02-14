@@ -1,4 +1,4 @@
-package BTLop;
+package BTHDT;
 
 public class Sanpham {
 	int maSp;

@@ -1,6 +1,8 @@
-package BTLop;
+package BTHDT;
 
 import java.util.ArrayList;
+
+import BTHDT.Sanpham;
 
 public class CT {
 
