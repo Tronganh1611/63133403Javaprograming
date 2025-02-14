@@ -13,9 +13,12 @@ public class Bai1 {
 		if (n<2)
 			System.out.printf("%d khong phai so nguyen to",n);
 		else {
-			for(int i=2; i< (int)Math.sqrt(n);i++)
+			for(int i=2; i<= (int)Math.sqrt(n);i++)
 				if(n % i ==0 )
+				{
 					kt = false;
+					break;
+				}
 		}
 		if (kt==true)
 			System.out.printf("%d la so nguyen to",n);
