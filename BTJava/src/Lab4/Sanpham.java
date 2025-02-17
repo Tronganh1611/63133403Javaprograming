@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Sanpham {
 	private String tensp;
-    private double dongia;
+	private double dongia;
     private double giamgia;
 	public Sanpham(String tensp, double dongia, double giamgia) {
 		super();
@@ -18,6 +18,24 @@ public class Sanpham {
 	public Sanpham (String tensp, double dongia) {
 		this.tensp = tensp;
 		this.dongia = dongia;
+	}
+	public String getTensp() {
+		return tensp;
+	}
+	public void setTensp(String tensp) {
+		this.tensp = tensp;
+	}
+	public double getDongia() {
+		return dongia;
+	}
+	public void setDongia(double dongia) {
+		this.dongia = dongia;
+	}
+	public double getGiamgia() {
+		return giamgia;
+	}
+	public void setGiamgia(double giamgia) {
+		this.giamgia = giamgia;
 	}
 	public  void nhap() {
         Scanner scanner = new Scanner(System.in);
