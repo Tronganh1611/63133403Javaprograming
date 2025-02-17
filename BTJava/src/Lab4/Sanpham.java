@@ -2,20 +2,24 @@ package Lab4;
 
 import java.util.Scanner;
 
-public class Bai1 {
-	static String tensp;
-	static double dongia;
-	static double giamgia;
-	public Bai1(String tensp, double dongia, double giamgia) {
+public class Sanpham {
+	private String tensp;
+    private double dongia;
+    private double giamgia;
+	public Sanpham(String tensp, double dongia, double giamgia) {
 		super();
 		this.tensp = tensp;
 		this.dongia = dongia;
 		this.giamgia = giamgia;
 	}
-	public Bai1() {
+	public Sanpham() {
 		
 	}
-	public static void nhap() {
+	public Sanpham (String tensp, double dongia) {
+		this.tensp = tensp;
+		this.dongia = dongia;
+	}
+	public  void nhap() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập tên sản phẩm: ");
         tensp = scanner.nextLine();
@@ -25,19 +29,20 @@ public class Bai1 {
         giamgia = scanner.nextDouble();
     }
 
-    public static double getThueNhapKhau() {
+    public  double getThueNhapKhau() {
         return dongia * 0.1;
     }
 
-    public static void xuat() {
+    public  void xuat() {
         System.out.println("Tên sản phẩm: " + tensp);
         System.out.println("Đơn giá: " + dongia);
         System.out.println("Giảm giá: " + giamgia);
         System.out.println("Thuế nhập khẩu: " + getThueNhapKhau());
     }
     public static void main(String[] args) {
-		nhap();
-		xuat();
+		Sanpham sp = new Sanpham();
+		sp.xuat();
+		sp.nhap();
 	}
 
 
