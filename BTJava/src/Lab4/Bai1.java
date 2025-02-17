@@ -12,6 +12,9 @@ public class Bai1 {
 		this.dongia = dongia;
 		this.giamgia = giamgia;
 	}
+	public Bai1() {
+		
+	}
 	public static void nhap() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập tên sản phẩm: ");
